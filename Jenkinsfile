@@ -23,7 +23,7 @@ pipeline {
             steps {
                 withSonarQubeEnv('sonarqube') {
 
-                sh 'mvn sonar:sonar -Dsonar.projectKey=gerenciadorprojeto-back -Dsonar.host.url=http://127.0.0.1:9000 -Dsonar.login=9e25125cd2c7897ba6ced991e52cc606f90cbe32'
+                sh 'mvn sonar:sonar -Dsonar.projectKey=TestJenkins -Dsonar.host.url=http://java-sonar-jenkins-teste-sonarqube-1:9000 -Dsonar.login=9763b1bd1f641f1b2a5e082a27df95ab2fd6ace2'
 
                 }
             }
